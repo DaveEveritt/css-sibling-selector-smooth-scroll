@@ -3,65 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Smooth scroll in CSS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <a href="#page-1">section 1</a>
-    <a href="#page-2">section 2</a>
-    <a href="#page-3">section 3</a>
-  </nav>
-  <main>
-    <section id="page-1">
-      <h2 id="top">Section 1</h2>
-      
-      <p>adapted from the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior">MDN article</a>, tested on Chrome 62, Firefox 57 (no support yet in Safari, Edge)</p>
+ 
+  <a id="services"></a>
+  <a id="gallery"></a>
+  <a id="contact"></a>
 
-      <p><a href="https://github.com/DaveEveritt/css-smooth-scroll">GitHub repository for this example</a>.</p>
+  <header class="nav">
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a> </li>
+        <li><a href="#gallery">Gallery</a> </li>
+        <li><a href="#contact">Contact</a> </li>
+      </ul>
+    </nav>
+  </header>
 
-      <p>Lorem ipsum dolor sit amet, mel ad duis malis nominati, dolore molestie no pro, vim wisi impetus accommodare cu. Vel ne tota tacimates facilisis. Dico fugit consulatu te mea. Esse novum laboramus cu vis, nonumy legere diceret ad pri, no eos iudico dictas accommodare.</p>
+  <section id="main">
+    <article class="panel" id="services">
+      <h1>What we do</h1>
+    </article>
 
-      <p>Eos delectus tacimates mediocrem id, ut magna soluta vocent mei. Fabulas consectetuer mel ne. Pro cu disputando reformidans, veniam primis no sed. Mel eu legere omnium, atqui error eos in, ne nibh mucius vidisse cum. At posse omnium concludaturque vim, pro no regione vulputate liberavisse, ut vel equidem fuisset corpora. Duo ei iusto salutandi, ea vim soluta iisque invenire.</p>
+    <article class="panel" id="gallery">
+      <h1>Some lovely photos</h1>
+    </article>
+    
+    <article class="panel" id="contact">
+      <h1>Get in touch!</h1>
+    </article>
+  </section>
 
-      <p>Eum utroque gloriatur ex. Te vix nibh impedit. Pri in ferri paulo legimus, has at mucius quodsi dignissim. Pri ne saperet ornatus facilisi. An dolore iriure pri, his mollis sadipscing an.</p>
-
-      <p>Duo qualisque interesset in, ad eum atqui altera, an mea tempor labores. Ut noster eleifend vulputate nec, stet fierent ad pro. Decore graeco ex vix, no enim alienum vim. Nec quando ornatus feugait eu, vix ex odio nibh debet.</p>
-
-      <p>At mel soleat singulis, sale summo tibique te vis. Cu vim ferri numquam, ea pri bonorum consulatu disputando. Ubique fastidii ei duo, aliquam ancillae sed ut. Vel consetetur interesset id. Cu accusam aliquando mei, et qui dicta ignota, in omnis illud eam. Quo ut autem deserunt percipitur, at facilis comprehensam per. Nam alterum voluptatum at, eu eos possit tibique moderatius.</p>
-
-      <a class="top" href="#page-1">TOP</a>
-    </section>
-
-    <section id="page-2">
-      <h2>Section 2</h2>
-      
-      <p>Lorem ipsum dolor sit amet, mel ad duis malis nominati, dolore molestie no pro, vim wisi impetus accommodare cu. Vel ne tota tacimates facilisis. Dico fugit consulatu te mea. Esse novum laboramus cu vis, nonumy legere diceret ad pri, no eos iudico dictas accommodare.</p>
-
-      <p>Eos delectus tacimates mediocrem id, ut magna soluta vocent mei. Fabulas consectetuer mel ne. Pro cu disputando reformidans, veniam primis no sed. Mel eu legere omnium, atqui error eos in, ne nibh mucius vidisse cum. At posse omnium concludaturque vim, pro no regione vulputate liberavisse, ut vel equidem fuisset corpora. Duo ei iusto salutandi, ea vim soluta iisque invenire.</p>
-
-      <p>Eum utroque gloriatur ex. Te vix nibh impedit. Pri in ferri paulo legimus, has at mucius quodsi dignissim. Pri ne saperet ornatus facilisi. An dolore iriure pri, his mollis sadipscing an.</p>
-
-      <p>Duo qualisque interesset in, ad eum atqui altera, an mea tempor labores. Ut noster eleifend vulputate nec, stet fierent ad pro. Decore graeco ex vix, no enim alienum vim. Nec quando ornatus feugait eu, vix ex odio nibh debet.</p>
-
-      <p>At mel soleat singulis, sale summo tibique te vis. Cu vim ferri numquam, ea pri bonorum consulatu disputando. Ubique fastidii ei duo, aliquam ancillae sed ut. Vel consetetur interesset id. Cu accusam aliquando mei, et qui dicta ignota, in omnis illud eam. Quo ut autem deserunt percipitur, at facilis comprehensam per. Nam alterum voluptatum at, eu eos possit tibique moderatius.</p>
-      
-      <a class="top" href="#page-1">TOP</a>
-    </section>
-
-    <section id="page-3">
-      <h2>Section 3</h2>
-      
-      <p>Lorem ipsum dolor sit amet, mel ad duis malis nominati, dolore molestie no pro, vim wisi impetus accommodare cu. Vel ne tota tacimates facilisis. Dico fugit consulatu te mea. Esse novum laboramus cu vis, nonumy legere diceret ad pri, no eos iudico dictas accommodare.</p>
-
-      <p>Eos delectus tacimates mediocrem id, ut magna soluta vocent mei. Fabulas consectetuer mel ne. Pro cu disputando reformidans, veniam primis no sed. Mel eu legere omnium, atqui error eos in, ne nibh mucius vidisse cum. At posse omnium concludaturque vim, pro no regione vulputate liberavisse, ut vel equidem fuisset corpora. Duo ei iusto salutandi, ea vim soluta iisque invenire.</p>
-
-      <p>Eum utroque gloriatur ex. Te vix nibh impedit. Pri in ferri paulo legimus, has at mucius quodsi dignissim. Pri ne saperet ornatus facilisi. An dolore iriure pri, his mollis sadipscing an.</p>
-
-      <p>Duo qualisque interesset in, ad eum atqui altera, an mea tempor labores. Ut noster eleifend vulputate nec, stet fierent ad pro. Decore graeco ex vix, no enim alienum vim. Nec quando ornatus feugait eu, vix ex odio nibh debet.</p>
-
-      <a class="top" href="#page-1">TOP</a>
-    </section>
-  </main>
 </body>
 </html>
